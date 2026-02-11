@@ -12,9 +12,8 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
-    }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
+      }`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -25,10 +24,10 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-8 items-center font-medium text-slate-600">
-          <a href="#technology" className="hover:text-joyx-blue transition-colors">Technology</a>
-          <a href="#solutions" className="hover:text-joyx-blue transition-colors">Solutions</a>
-          <a href="#partners" className="hover:text-joyx-blue transition-colors">Partners</a>
-          <a href="#about" className="hover:text-joyx-blue transition-colors">About Us</a>
+          <a href="/technology.html" className="hover:text-joyx-blue transition-colors">Technology</a>
+          <a href="/solutions.html" className="hover:text-joyx-blue transition-colors">Solutions</a>
+          <a href="/partners.html" className="hover:text-joyx-blue transition-colors">Partners</a>
+          <a href="/about.html" className="hover:text-joyx-blue transition-colors">About Us</a>
         </div>
 
         {/* CTA */}
