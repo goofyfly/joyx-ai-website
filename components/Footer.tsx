@@ -8,8 +8,10 @@ const Footer: React.FC = () => {
 
           {/* Left: Brand & Location */}
           <div className="text-center md:text-left">
-            <a href="/index.html" className="text-2xl font-extrabold tracking-tighter text-slate-900 block mb-4">
-              JOYX<span className="text-joyx-cyan">AI</span>
+            <a href="/index.html" className="inline-block mb-4">
+              <span className="text-2xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-joyx-blue to-joyx-cyan">
+                JOYX
+              </span>
             </a>
             <p className="text-slate-500 text-sm leading-relaxed">
               Palo Alto • Kuala Lumpur<br />
@@ -29,7 +31,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom: Copyright Only (No Social Media) */}
         <div className="border-t border-slate-100 pt-8 text-center text-sm text-slate-400">
-          <p>© 2026 JOYX Holdings Ltd. All Rights Reserved.</p>
+          <p>© 2026 JOYX INC. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
