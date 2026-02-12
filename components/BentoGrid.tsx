@@ -1,6 +1,10 @@
 import React from 'react';
 
-const BentoGrid: React.FC = () => {
+interface BentoGridProps {
+  onOpenModal: () => void;
+}
+
+const BentoGrid: React.FC<BentoGridProps> = ({ onOpenModal }) => {
   return (
     <section className="py-24 bg-slate-50">
       <div className="container mx-auto px-6">
@@ -17,10 +21,16 @@ const BentoGrid: React.FC = () => {
               We craft impactful ad inventory through proprietary spatial computing technology, helping brands unlock the 96% of narrative time.
             </p>
             <div className="flex gap-4">
-              <button className="bg-joyx-blue text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-blue-700 transition-all">
+              <button
+                onClick={onOpenModal}
+                className="bg-joyx-blue text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-blue-700 transition-all"
+              >
                 Get Started
               </button>
-              <button className="px-8 py-3 rounded-full font-bold border border-slate-300 hover:bg-white transition-all text-slate-600">
+              <button
+                onClick={onOpenModal}
+                className="px-8 py-3 rounded-full font-bold border border-slate-300 hover:bg-white transition-all text-slate-600"
+              >
                 Watch Demo
               </button>
             </div>

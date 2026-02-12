@@ -1,7 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useParallax } from '../hooks/useParallax';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  onOpenModal: () => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
   const scrollOffset = useParallax(0.2);
   const imageOffset = useParallax(0.1);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -65,12 +69,18 @@ const Hero: React.FC = () => {
             Native, non-intrusive ad insertion powered by Spatial AI. We help platforms monetize without interrupting the story.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-slate-900 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-slate-800 transition-colors shadow-xl">
+            <button
+              onClick={onOpenModal}
+              className="bg-slate-900 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-slate-800 transition-colors shadow-xl"
+            >
               See It in Action
             </button>
-            <button className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-full font-semibold text-lg hover:border-slate-300 transition-colors">
+            <a
+              href="/solutions.html"
+              className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-full font-semibold text-lg hover:border-slate-300 transition-colors inline-block text-center"
+            >
               Learn More
-            </button>
+            </a>
           </div>
         </div>
 
