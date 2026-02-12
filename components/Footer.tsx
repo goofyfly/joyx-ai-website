@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom: Copyright Only (No Social Media) */}
         <div className="border-t border-slate-100 pt-8 text-center text-sm text-slate-400">
-          <p>© 2026 JOYBOT Holdings Ltd. All Rights Reserved.</p>
+          <p>© 2026 JOYX Holdings Ltd. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

@@ -38,9 +38,9 @@ const UseCases: React.FC = () => {
           <div className="md:row-span-2 relative group rounded-[2rem] overflow-hidden cursor-pointer bg-slate-900 shadow-2xl">
             {/* 新图：包含专业监视器和调色台的暗室环境 */}
             <img
-              src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop"
+              src="/klara-kulikova-lmTgP9neRdU-unsplash.jpg"
               alt="Professional Film Editing Studio"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+              className="w-full h-full object-cover object-right transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-8 left-8 pr-6">
