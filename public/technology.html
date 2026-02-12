@@ -332,6 +332,8 @@
     const openBtns = document.querySelectorAll('.request-demo-btn');
     const closeBtn = document.getElementById('close-modal');
     const backdrop = document.getElementById('modal-backdrop');
+    const form = document.querySelector('form[name="request-demo"]');
+    const modalBody = document.querySelector('.p-8');
 
     function openModal() {
       modal.classList.remove('hidden');
@@ -354,6 +356,47 @@
     openBtns.forEach(btn => btn.addEventListener('click', openModal));
     closeBtn.addEventListener('click', closeModal);
     backdrop.addEventListener('click', closeModal);
+
+    // AJAX Form Submission
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerText;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin mr-2"></i> Sending...';
+
+      const formData = new FormData(form);
+      const data = new URLSearchParams();
+      for (const [key, value] of formData) {
+        data.append(key, value);
+      }
+
+      fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: data.toString()
+      })
+        .then(() => {
+          // Show Success Message
+          modalBody.innerHTML = `
+            <div class="text-center py-12">
+                <div class="w-16 h-16 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-2">Request Sent!</h3>
+                <p class="text-slate-500 mb-8">Thanks for your interest. Our team will be in touch shortly to schedule your demo.</p>
+                <button onclick="location.reload()" class="bg-slate-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-slate-800 transition-colors">Close</button>
+            </div>
+        `;
+        })
+        .catch((error) => {
+          console.error('Form Error:', error);
+          submitBtn.innerText = 'Error. Try Again.';
+          submitBtn.classList.add('bg-red-600');
+          submitBtn.disabled = false;
+        });
+    });
   </script>
 </body>
 
