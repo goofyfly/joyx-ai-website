@@ -2,78 +2,87 @@ import React from 'react';
 
 const UseCases: React.FC = () => {
   return (
-    // CHANGE 1: Strong Blue Background like the reference
-    <section className="py-24 bg-slate-900 text-white">
+    // 修改 1: 回归“电光蓝”背景，保持高视觉冲击力
+    <section className="py-24 bg-[#0033FF] text-white">
       <div className="container mx-auto px-6">
 
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
-            Built for <br />
-            <span className="text-blue-200">High-Value Content.</span>
+            See our favorite <br />
+            <span className="text-blue-200">implementation scenarios.</span>
           </h2>
           <p className="text-blue-100 max-w-2xl mx-auto text-lg">
-            From NBA courtsides to Netflix dramas, we make ads look like they belong there.
+            From NBA courtsides to Disney dramas, we make ads look like they belong there.
           </p>
         </div>
 
-        {/* Masonry Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+        {/* Masonry Grid Layout (不规则拼贴感) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[320px]">
 
-          {/* Card 1: Large Wide (NBA/Sports) */}
-          <div className="md:col-span-2 relative group rounded-[2rem] overflow-hidden cursor-pointer">
+          {/* Card 1: Sports (横跨两列 - 大图) */}
+          <div className="md:col-span-2 relative group rounded-[2rem] overflow-hidden cursor-pointer shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1505666287802-931dc83948e9?q=80&w=2071&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=2069&auto=format&fit=crop"
               alt="Sports Arena"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             <div className="absolute bottom-8 left-8">
+              <span className="bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">LIVE</span>
               <h3 className="text-2xl font-bold mb-1">Sports Broadcasting</h3>
-              <p className="text-sm opacity-90">Live Dynamic Insertion</p>
-            </div>
-            {/* Pill Button Overlay */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
-              <span className="bg-white text-blue-700 px-6 py-3 rounded-full font-bold shadow-lg">View Project</span>
+              <p className="text-sm opacity-90 text-blue-100">Dynamic court-side & perimeter replacement.</p>
             </div>
           </div>
 
-          {/* Card 2: Tall (Product Placement) */}
-          <div className="md:row-span-2 relative group rounded-[2rem] overflow-hidden cursor-pointer bg-slate-800">
+          {/* Card 2: In-Show Product (竖跨两行 - 长图) - [已修复图片] */}
+          <div className="md:row-span-2 relative group rounded-[2rem] overflow-hidden cursor-pointer bg-slate-800 shadow-2xl">
+            {/* 换了一张更像产品植入场景的图片（咖啡厅/桌子） */}
             <img
-              src="https://images.unsplash.com/photo-1593784991095-a20506948430?q=80&w=1887&auto=format&fit=crop"
-              alt="Product Placement"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=1974&auto=format&fit=crop"
+              alt="Product Placement Scene"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute bottom-8 left-8">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <div className="absolute bottom-8 left-8 pr-4">
               <h3 className="text-2xl font-bold mb-1">In-Show Product</h3>
-              <p className="text-sm opacity-90">Post-production AI</p>
+              <p className="text-sm opacity-90 text-blue-100">
+                Placing beverages or tech gadgets onto tables in post-production. Zero reshoots.
+              </p>
             </div>
           </div>
 
-          {/* Card 3: Standard (TV Interface) */}
-          <div className="relative group rounded-[2rem] overflow-hidden cursor-pointer bg-blue-800">
+          {/* Card 3: Premium Drama (Disney Vibe) - [修正逻辑：原生植入非UI] */}
+          <div className="relative group rounded-[2rem] overflow-hidden cursor-pointer bg-blue-900 shadow-xl">
+            {/* 换了一张更有电影质感/奇幻剧集的图片 */}
             <img
-              src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?q=80&w=2070&auto=format&fit=crop"
-              alt="Smart TV"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+              src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=2025&auto=format&fit=crop"
+              alt="Cinematic Movie Scene"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute bottom-8 left-8">
-              <h3 className="text-xl font-bold mb-1">Smart TV UI</h3>
-              <p className="text-sm opacity-90">Non-intrusive Overlay</p>
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute bottom-8 left-8 pr-4">
+              <h3 className="text-xl font-bold mb-1">Premium Drama</h3>
+              <p className="text-xs opacity-90 text-blue-100 leading-snug">
+                Native object insertion into narrative arcs (e.g., Disney+ series) without disrupting the story.
+              </p>
             </div>
           </div>
 
-          {/* Card 4: Standard (Dashboard/Tech) */}
-          <div className="relative group rounded-[2rem] overflow-hidden cursor-pointer bg-cyan-900">
+          {/* Card 4: Post-Campaign Analysis - [修正逻辑：结案分析非实时] */}
+          <div className="relative group rounded-[2rem] overflow-hidden cursor-pointer bg-cyan-900 shadow-xl">
+            {/* 换成了报表/归因分析风格的图片 */}
             <img
               src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
-              alt="Analytics Dashboard"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              alt="Data Report"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute bottom-8 left-8">
-              <h3 className="text-xl font-bold mb-1">Real-time Analytics</h3>
-              <p className="text-sm opacity-90">Client Dashboard</p>
+            <div className="absolute inset-0 bg-blue-900/80 mix-blend-multiply"></div>
+            <div className="absolute bottom-8 left-8 pr-4">
+              <h3 className="text-xl font-bold mb-1">Campaign Insights</h3>
+              <p className="text-xs opacity-90 text-blue-100 leading-snug">
+                Personalized backend attribution & comprehensive post-campaign ROI analysis.
+              </p>
             </div>
           </div>
 
