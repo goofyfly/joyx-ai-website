@@ -34,14 +34,6 @@ const WhyJoyx: React.FC = () => {
               </p>
             </div>
 
-            {/* Bottom Visual Anchor (Replacing the generic link) */}
-            <div className="mt-auto border-t border-slate-100 pt-6 flex items-center justify-between">
-              <span className="text-sm font-bold text-slate-400 group-hover:text-joyx-blue transition-colors">Unlock Capacity</span>
-              <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-joyx-blue group-hover:text-white transition-all">
-                <i className="fas fa-arrow-right text-xs"></i>
-              </div>
-            </div>
-
             {/* Decorative Gradient Blob (Bottom Right) */}
             <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-gradient-to-br from-joyx-blue to-cyan-400 opacity-0 group-hover:opacity-10 blur-2xl transition-opacity"></div>
           </div>
@@ -62,12 +54,6 @@ const WhyJoyx: React.FC = () => {
               </p>
             </div>
 
-            <div className="mt-auto border-t border-slate-100 pt-6 flex items-center justify-between">
-              <span className="text-sm font-bold text-slate-400 group-hover:text-joyx-cyan transition-colors">See Tech Stack</span>
-              <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-joyx-cyan group-hover:text-white transition-all">
-                <i className="fas fa-arrow-right text-xs"></i>
-              </div>
-            </div>
             <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-gradient-to-br from-joyx-cyan to-blue-400 opacity-0 group-hover:opacity-10 blur-2xl transition-opacity"></div>
           </div>
 
@@ -87,12 +73,6 @@ const WhyJoyx: React.FC = () => {
               </p>
             </div>
 
-            <div className="mt-auto border-t border-slate-100 pt-6 flex items-center justify-between">
-              <span className="text-sm font-bold text-slate-400 group-hover:text-indigo-600 transition-colors">Compliance</span>
-              <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-all">
-                <i className="fas fa-arrow-right text-xs"></i>
-              </div>
-            </div>
             <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-gradient-to-br from-indigo-500 to-purple-500 opacity-0 group-hover:opacity-10 blur-2xl transition-opacity"></div>
           </div>
 
