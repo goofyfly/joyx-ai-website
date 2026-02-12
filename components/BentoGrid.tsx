@@ -9,9 +9,9 @@ const BentoGrid: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-8">
 
           {/* Left: Value Proposition */}
-          <div className="flex flex-col justify-center bg-blue-50/50 rounded-[2.5rem] p-10 md:p-14">
+          <div className="flex flex-col justify-center bg-blue-50/50 rounded-[2rem] p-10 md:p-14">
             <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
-              Fueling Growth for the <span className="text-joyx-blue border-b-4 border-joyx-cyan/30">Video Age.</span>
+              The Infrastructure for <span className="text-joyx-blue border-b-4 border-joyx-cyan/30">Native Ads.</span>
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
               We craft impactful ad inventory through proprietary spatial computing technology, helping brands unlock the 96% of narrative time.
@@ -27,7 +27,7 @@ const BentoGrid: React.FC = () => {
           </div>
 
           {/* Right: Real Human + Data Overlay (The "Real Business" Look) */}
-          <div className="relative rounded-[2.5rem] overflow-hidden min-h-[400px] group">
+          <div className="relative rounded-[2rem] overflow-hidden min-h-[400px] group">
             {/* Real human image, not abstract 3D */}
             <img
               src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop"

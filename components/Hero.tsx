@@ -59,12 +59,10 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto mb-16">
           <h1 className="text-5xl md:text-7xl font-bold text-slate-900 leading-[1.1] mb-6 tracking-tight">
-            Unlock the Other <span className="text-joyx-blue">96%</span>:<br />
-            The Future of In-Video Advertising.
+            Turn the Other <span className="text-joyx-blue">96%</span> of Video Time into Revenue.
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl leading-relaxed mb-10">
-            Seamless 3D insertion driven by CNN & Spatial Computing. <br className="hidden md:block" />
-            Non-intrusive, High-impact, and Brand-safe.
+            Native, non-intrusive ad insertion powered by Spatial AI. We help platforms monetize without interrupting the story.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-slate-900 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-slate-800 transition-colors shadow-xl">

@@ -3,14 +3,14 @@ import React from 'react';
 const UseCases: React.FC = () => {
   return (
     // CHANGE 1: Strong Blue Background like the reference
-    <section className="py-24 bg-[#0033FF] text-white">
+    <section className="py-24 bg-slate-900 text-white">
       <div className="container mx-auto px-6">
 
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
-            See our favorite <br />
-            <span className="text-blue-200">implementation scenarios.</span>
+            Built for <br />
+            <span className="text-blue-200">High-Value Content.</span>
           </h2>
           <p className="text-blue-100 max-w-2xl mx-auto text-lg">
             From NBA courtsides to Netflix dramas, we make ads look like they belong there.
