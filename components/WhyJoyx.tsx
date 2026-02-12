@@ -26,10 +26,10 @@ const WhyJoyx: React.FC = () => {
 
             <div className="relative z-10 mt-4">
               <div className="w-12 h-12 mb-6 rounded-xl bg-blue-50 flex items-center justify-center text-joyx-blue text-xl">
-                <i className="fas fa-chart-pie"></i> {/* Keep icon but make it subtle part of UI */}
+                <i className="fas fa-chart-pie"></i>
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-joyx-blue transition-colors">Maximize Inventory</h3>
-              <p className="text-slate-500 leading-relaxed mb-8">
+              <p className="text-slate-500 leading-relaxed">
                 Traditional ads fight for the 4% break time. We activate the <span className="font-bold text-slate-700">96% of narrative time</span> without interrupting the story.
               </p>
             </div>
@@ -49,7 +49,7 @@ const WhyJoyx: React.FC = () => {
                 <i className="fas fa-brain"></i>
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-joyx-cyan transition-colors">Computer Vision</h3>
-              <p className="text-slate-500 leading-relaxed mb-8">
+              <p className="text-slate-500 leading-relaxed">
                 Not just stickers. Our CNN engine analyzes depth, lighting, and camera movement to render objects that <span className="font-bold text-slate-700">physically belong</span>.
               </p>
             </div>
@@ -68,7 +68,7 @@ const WhyJoyx: React.FC = () => {
                 <i className="fas fa-shield-alt"></i>
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-indigo-600 transition-colors">Brand Safety</h3>
-              <p className="text-slate-500 leading-relaxed mb-8">
+              <p className="text-slate-500 leading-relaxed">
                 Protect viewer experience. No hard cuts, no skip buttons. Reach high-value <span className="font-bold text-slate-700">ad-free subscribers</span> natively.
               </p>
             </div>
